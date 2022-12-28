@@ -2,6 +2,8 @@ lockfileVersion: 5.3
 
 specifiers:
   '@types/node': 18.11.10
+  clsx: ^1.2.1
+  framer-motion: ^7.3.2
   next: ^13.0.6
   nextra: 2.0.1
   nextra-theme-docs: 2.0.1
