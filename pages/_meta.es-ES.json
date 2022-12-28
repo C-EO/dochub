@@ -1,0 +1,19 @@
+{
+   "-- Empezando --": {
+     "type": "separator",
+     "title": "Introducción"
+   },
+   "index": "Introducción",
+   "another": "Otra página",
+   "legal": "Políticas del sitio",
+   "about": {
+     "title": "Acerca de",
+     "type": "page"
+   },
+   "contact": {
+     "title": "Contacto ↗",
+     "type": "page",
+     "href": "mailto:help.nitehub@gmail.com",
+     "newWindow": true
+   }
+}
