@@ -1,7 +1,11 @@
 {
+  "-- Getting Started --": {
+    "type": "separator",
+    "title": "Introduction"
+  },
   "index": "Introduction",
   "another": "Another Page",
-  "advanced": "Advanced (A Folder)",
+  "legal": "Site Policies",
   "about": {
     "title": "About",
     "type": "page"
@@ -9,7 +13,7 @@
   "contact": {
     "title": "Contact ↗",
     "type": "page",
-    "href": "https://twitter.com/shuding_",
+    "href": "mailto:help.nitehub@gmail.com",
     "newWindow": true
   }
 }
