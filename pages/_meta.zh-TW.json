@@ -1,0 +1,19 @@
+{
+  "-- 入門 --": {
+    "type": "separator",
+    "title": "簡介"
+  },
+  "index": "簡介",
+  "another": "另一頁",
+  "legal": "網站政策",
+  "about": {
+    "title": "關於",
+    "type": "page"
+  },
+  "contact": {
+    "title": "聯絡↗",
+    "type": "page",
+    "href": "mailto:help.nitehub@gmail.com",
+    "newWindow": true
+  }
+}
