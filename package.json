@@ -1,7 +1,7 @@
 {
-  "name": "nextra-docs-template",
-  "version": "0.0.1",
-  "description": "Nextra docs template",
+  "name": "nitehub-docs",
+  "version": "1.0.0",
+  "description": "Nitehub Official Documentation",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -9,18 +9,20 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shuding/nextra-docs-template.git"
+    "url": "git+https://github.com/c-eo/dochub.git"
   },
-  "author": "Shu Ding <g@shud.in>",
+  "author": "C-EO <dennis.sebalemba@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/shuding/nextra-docs-template/issues"
+    "url": "https://github.com/c-eo/dochub/issues"
   },
-  "homepage": "https://github.com/shuding/nextra-docs-template#readme",
+  "homepage": "https://github.com/c-eo/dochub#readme",
   "dependencies": {
+    "clsx": "^1.2.1",
     "next": "^13.0.6",
     "nextra": "2.0.1",
     "nextra-theme-docs": "2.0.1",
+    "framer-motion": "^7.3.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
