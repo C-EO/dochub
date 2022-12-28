@@ -5,7 +5,7 @@
   },
   "index": "Introduction",
   "another": "Another Page",
-  "legal.en-US": "Site Policies",
+  "legal": "Site Policies",
   "about": {
     "title": "About",
     "type": "page"
