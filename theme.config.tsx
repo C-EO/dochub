@@ -25,7 +25,7 @@ const config: DocsThemeConfig = {
   docsRepositoryBase: 'https://github.com/C-EO/dochub/blob/main/',
   footer: {
     text: <span>
-      <a href="/legal/license" target="_blank"><b>CC-BY-4.0</br></a> Copyright © {new Date().getFullYear()} <a href="https://git.c-eo.repl.co" target="_blank">Nitehub Org.</a> All rights reserved.
+      <a href="/legal/license" target="_blank"><b>CC-BY-4.0</b></a> Copyright © {new Date().getFullYear()} <a href="https://git.c-eo.repl.co" target="_blank">Nitehub Org.</a> All rights reserved.
       </span>,
   },
   head: () => {
