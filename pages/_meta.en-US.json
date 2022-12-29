@@ -4,6 +4,10 @@
     "title": "Introduction"
   },
   "index": "Introduction",
+  "-- Legal --": {
+    "type": "separator",
+    "title": "Legal Documentation"
+  },
   "legal": "Site Policies",
   "about": {
     "title": "About",
