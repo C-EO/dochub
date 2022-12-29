@@ -4,6 +4,10 @@
     "title": "簡介"
   },
   "index": "簡介",
+  " --  Legal  -- "： {
+     "type": "separator",
+     "title": "法律文件"
+   },
   "legal": "網站政策",
   "about": {
     "title": "關於",
