@@ -22,7 +22,7 @@ const config: DocsThemeConfig = {
   chat: {
     link: 'https://discord.gg/tEcXZ2FVuz',
   },
-  docsRepositoryBase: 'https://github.com/C-EO/nitehub-docs/blob/main/',
+  docsRepositoryBase: 'https://github.com/C-EO/dochub/blob/main/',
   footer: {
     text: <span>
         CC-BY-4.0 © {new Date().getFullYear()} <a href="https://git.c-eo.repl.co" target="_blank">Nitehub Org.</a> All rights reserved.
@@ -64,7 +64,7 @@ const config: DocsThemeConfig = {
   { locale: 'es-ES', text: 'Español' },
   { locale: 'fr-FR', text: 'Français' },
   { locale: 'zh-CN', text: '中文' },
-  { locale: 'zh-TW', text: '中文' },
+  { locale: 'zh-TW', text: '中國人' },
   { locale: 'de-DE', text: 'Deutsch' }
 ]
 }
