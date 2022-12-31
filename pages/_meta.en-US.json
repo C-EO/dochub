@@ -18,8 +18,7 @@
     "type": "page",
     "theme": {
       "sidebar": false,
-      "prevLink": false,
-      "nextLink": false
+      "pagination": false
     }
   },
   "contact": {
