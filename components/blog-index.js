@@ -7,13 +7,13 @@ export default function BlogIndex({ more = "Read more" }) {
     const A = "a";
     return (
       <div className="">
-        <h3>
+      {<h3>
           <Link href={page.route}>
             <A style={{ color: "inherit", textDecoration: "none" }}>
               {page.meta?.title || page.frontMatter?.title || page.name}
             </A>
           </Link>
-        </h3>
+        </h3>}
         <p className="opacity-80">
           {page.frontMatter?.description}{" "}
           <Link href={page.route}>{more + " →"}</Link>
