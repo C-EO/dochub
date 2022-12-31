@@ -13,6 +13,14 @@
      "title": "Acerca de",
      "type": "page"
    },
+   "blog": {
+    "title": "Blog",
+    "type": "page",
+    "theme": {
+      "sidebar": false,
+      "pagination": false
+    }
+  },
    "contact": {
      "title": "Contacto ↗",
      "type": "page",
