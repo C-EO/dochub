@@ -13,6 +13,14 @@
     "title": "關於",
     "type": "page"
   },
+  "blog": {
+    "title": "博客",
+    "type": "page",
+    "theme": {
+      "sidebar": false,
+      "pagination": false
+    }
+  },
   "contact": {
     "title": "聯絡↗",
     "type": "page",
