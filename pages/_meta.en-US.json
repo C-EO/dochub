@@ -13,6 +13,13 @@
     "title": "About",
     "type": "page"
   },
+  "blog": {
+    "title": "Blog",
+    "type": "page",
+    "theme": {
+      "sidebar": false
+    }
+  },
   "contact": {
     "title": "Contact ↗",
     "type": "page",
