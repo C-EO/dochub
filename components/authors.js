@@ -15,3 +15,4 @@ export function Author({ name, link }) {
       </a>
     </span>
   );
+}
