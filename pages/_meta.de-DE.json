@@ -17,7 +17,8 @@
       "title": "Blog",
       "type": "page",
       "theme": {
-        "sidebar": false
+        "sidebar": false,
+        "pagination": false
       }
     },
     "contact": {
