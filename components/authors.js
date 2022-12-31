@@ -1,7 +1,8 @@
-export default function Authors({ date, children }) {
+
+export default function Authors({ date, children, by = "by" }) {
   return (
-    <div className="mt-8 mb-16 text-sm text-gray-400">
-      {date} by {children}
+    <div className="mt-4 mb-16 text-gray-500 text-sm">
+      {date} {by} {children}
     </div>
   );
 }
@@ -9,14 +10,8 @@ export default function Authors({ date, children }) {
 export function Author({ name, link }) {
   return (
     <span className="after:content-[','] last:after:content-['']">
-      <a
-        key={name}
-        href={link}
-        target="_blank"
-        className="mx-1 text-gray-800 dark:text-gray-100"
-      >
+      <a key={name} href={link} target="_blank" className="mx-1 text-current">
         {name}
       </a>
     </span>
   );
-}
