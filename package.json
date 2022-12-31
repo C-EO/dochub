@@ -26,7 +26,8 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-intersection-observer": "^8.26.2",
-    "intersection-observer": "^0.10.0"
+    "intersection-observer": "^0.10.0",
+    "remark-mdx-disable-explicit-jsx": "0.1.0"
   },
   "devDependencies": {
     "@types/node": "18.11.10",
