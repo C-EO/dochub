@@ -1,0 +1,29 @@
+{
+    "-- Introduction --": {
+      "type": "separator",
+      "title": "Einführung"
+    },
+    "index": "Einführung",
+    "-- Legal --": {
+      "type": "separator",
+      "title": "Rechtliche Dokumentation"
+    },
+    "legal": "Site-Richtlinien",
+    "about": {
+      "title": "Über",
+      "type": "page"
+    },
+    "blog": {
+      "title": "Blog",
+      "type": "page",
+      "theme": {
+        "sidebar": false
+      }
+    },
+    "contact": {
+      "title": "Kontakt ↗",
+      "type": "page",
+      "href": "mailto:help.nitehub@gmail.com",
+      "newWindow": true
+    }
+  }
