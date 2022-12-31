@@ -1,4 +1,4 @@
-import remarkMdxDisableExplicitJsx from 'remark-mdx-disable-explicit-jsx'
+import { remarkMdxDisableExplicitJsx } from 'remark-mdx-disable-explicit-jsx'
 
 const withNextra = require('nextra')({
   theme: 'nextra-theme-docs',
