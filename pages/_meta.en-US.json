@@ -21,6 +21,20 @@
       "pagination": false
     }
   },
+  "404": {
+    "title": "404 - This page could not be found",
+    "theme": {
+      "sidebar": false,
+      "pagination": false
+    }
+  },
+  "500": {
+    "title": "500 - Internal Server Error",
+    "theme": {
+      "sidebar": false,
+      "pagination": false
+    }
+  },
   "contact": {
     "title": "Contact ↗",
     "type": "page",
