@@ -16,12 +16,12 @@
   "bugs": {
     "url": "https://github.com/c-eo/dochub/issues"
   },
-  "homepage": "https://github.com/c-eo/dochub#readme",
+  "homepage": "https://dochub.vercel.app,
   "dependencies": {
     "clsx": "^1.2.1",
-    "next": "^13.0.6",
+    "next": "^13.1.1",
     "nextra": "2.1.0",
-    "nextra-theme-docs": "2.0.3",
+    "nextra-theme-docs": "2.1.0",
     "framer-motion": "^7.3.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
