@@ -16,7 +16,7 @@
   "bugs": {
     "url": "https://github.com/c-eo/dochub/issues"
   },
-  "homepage": "https://dochub.vercel.app,
+  "homepage": "https://dochub.vercel.app",
   "dependencies": {
     "clsx": "^1.2.1",
     "next": "^13.1.1",
