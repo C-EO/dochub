@@ -16,7 +16,7 @@ const FEEDBACK_LINK_WITH_TRANSLATIONS = {
   "es-ES": "¿Pregunta? Danos tu opinión →",
   "fr-FR": "Question? Donnez-nous votre avis →",
   "zh-CN": "题？ 给我们反馈 →",
-  "zh-TW": "題？ 給我們反饋 →",
+  "zh-TW": "問題？ 反馈给我们 →",
   "de-DE": "Frage? Geben Sie uns Feedback →",
 };
 
@@ -25,7 +25,7 @@ const EDIT_THIS_PAGE_LINK_WITH_TRANSLATIONS = {
   "es-ES": "Edita esta página en GitHub →",
   "fr-FR": "Modifier cette page sur GitHub →",
   "zh-CN": "在 GitHub 上编辑此页面 →",
-  "zh-TW": "在 GitHub 上編輯此頁面 →",
+  "zh-TW": "在 GitHub 上编辑这个页面 →",
   "de-DE": "Bearbeiten Sie diese Seite auf GitHub →",
 };
 
@@ -148,8 +148,8 @@ const config: DocsThemeConfig = {
     { locale: "en-US", text: "English" },
     { locale: "es-ES", text: "Español" },
     { locale: "fr-FR", text: "Français" },
-    { locale: "zh-CN", text: "中文" },
-    { locale: "zh-TW", text: "中國人" },
+    { locale: "zh-CN", text: "简体中文" },
+    { locale: "zh-TW", text: "繁體中文" },
     { locale: "de-DE", text: "Deutsch" },
   ],
 };
