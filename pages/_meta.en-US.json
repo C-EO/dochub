@@ -18,7 +18,8 @@
     "type": "page",
     "theme": {
       "sidebar": false,
-      "pagination": false
+      "pagination": false,
+      "typesetting": "article" 
     }
   },
   "404": {
