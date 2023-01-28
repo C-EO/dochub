@@ -6,9 +6,6 @@ const withNextra = nextra({
   staticImage: true,
   latex: true,
   defaultShowCopyCode: true,
-  images: {
-    domains: ['raw.githubusercontent.com', 'avatars.githubusercontent.com'],
-  },
 })
 
 export default withNextra({
