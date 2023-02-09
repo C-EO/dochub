@@ -1,6 +1,6 @@
 {
   "name": "nitehub-docs",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Nitehub Official Documentation",
   "scripts": {
     "dev": "next dev",
@@ -20,8 +20,8 @@
   "dependencies": {
     "clsx": "^1.2.1",
     "next": "^13.1.1",
-    "nextra": "latest",
-    "nextra-theme-docs": "latest",
+    "nextra": "^2.2.14",
+    "nextra-theme-docs": "^2.2.14",
     "framer-motion": "^7.3.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
