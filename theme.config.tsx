@@ -2,6 +2,8 @@ import React from "react";
 import { DocsThemeConfig, useConfig } from "nextra-theme-docs";
 import { useRouter } from "next/router";
 
+const NITEHUB_URL = "https://git.c-eo.repl.co";
+
 const TITLE_WITH_TRANSLATIONS = {
   "en-US": "Nitehub Documentation",
   "es-ES": "Documentación de Nitehub",
@@ -9,6 +11,33 @@ const TITLE_WITH_TRANSLATIONS = {
   "zh-CN": "Nitehub 文档",
   "zh-TW": "Nitehub 文檔",
   "de-DE": "Nitehub-Dokumentation",
+};
+
+const SEARCH_PLACEHOLDER_WITH_TRANSLATIONS = {
+  "en-US": "Search documentation...",
+  "es-ES": "Buscar documentación...",
+  "fr-FR": "Rechercher des documents...",
+  "zh-CN": "搜索文档...",
+  "zh-TW": "搜索文檔...",
+  "de-DE": "Dokumentation suchen...",
+};
+
+const TOC_TITLE_WITH_TRANSLATIONS = {
+  "en-US": "On This Page",
+  "es-ES": "En esta página",
+  "fr-FR": "Sur cette page",
+  "zh-CN": "在本页",
+  "zh-TW": "在本頁",
+  "de-DE": "Auf dieser Seite",
+};
+
+const BANNER_TEXT_WITH_TRANSLATIONS = {
+  "en-US": "🆕 We have updated our site policies. Read more →",
+  "es-ES": "🆕 Hemos actualizado las políticas de nuestro sitio. Leer más →",
+  "fr-FR": "🆕 Nous avons mis à jour les politiques de notre site. En savoir plus →",
+  "zh-CN": "🆕 我们更新了网站政策。 阅读更多 →",
+  "zh-TW": "🆕 我們更新了網站政策。 了解更多→",
+  "de-DE": "🆕 Wir haben unsere Website-Richtlinien aktualisiert. Weiterlesen →",
 };
 
 const FEEDBACK_LINK_WITH_TRANSLATIONS = {
@@ -69,7 +98,7 @@ const config: DocsThemeConfig = {
           <b>CC-BY-4.0</b>
         </a>{ " " }
         Copyright © { new Date().getFullYear() }{ " " }
-        <a href="https://git.c-eo.repl.co" target="_blank">
+        <a href={ NITEHUB_URL } target="_blank">
           Nitehub Org.
         </a>{ " " }
         All rights reserved.
@@ -95,6 +124,11 @@ const config: DocsThemeConfig = {
             frontMatter.description || "The Official Nitehub Documentation."
           }
         />
+        <meta name="msapplication-TileColor" content="#000000" />
+        <meta name="theme-color" content="#000" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@nitehub_org" />
+        <meta name="twitter:creator" content="@nitehub_org" />
       </>
     );
   },
@@ -109,12 +143,27 @@ const config: DocsThemeConfig = {
   darkMode: true,
   banner: {
     key: "policy-updates",
-    text: (
-      <a href="https://dochub.vercel.app/legal/updates" target="_blank">
-        🆕 We have updated our site policies. Read more →
-      </a>
-    ),
+    text: () => {
+      const { locale } = useRouter();
+      return (
+        <a href="https://dochub.vercel.app/legal/updates" target="_blank">
+          {BANNER_TEXT_WITH_TRANSLATIONS[locale] || BANNER_TEXT_WITH_TRANSLATIONS["en-US"]}
+        </a>
+      );
+    },
     dismissible: true,
+  },
+  search: {
+    placeholder: () => {
+      const { locale } = useRouter();
+      return SEARCH_PLACEHOLDER_WITH_TRANSLATIONS[locale] || SEARCH_PLACEHOLDER_WITH_TRANSLATIONS["en-US"];
+    },
+  },
+  toc: {
+    title: () => {
+      const { locale } = useRouter();
+      return TABLE_OF_CONTENTS_TITLE[locale] || TABLE_OF_CONTENTS_TITLE["en-US"];
+    },
   },
   sidebar: {
     defaultMenuCollapseLevel: 0,
