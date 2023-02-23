@@ -3,8 +3,20 @@ title: Blog
 searchable: false
 ---
 
-<h1 className="text-center font-extrabold md:text-5xl mt-8 pb-6">Offizieller Nitehub-Blog</h1>
+export function BlogHeader() {
+  return (
+    <div className="max-w-screen-lg mx-auto pt-4 pb-8 mb-16 border-b border-gray-400 border-opacity-20">
+      <h1>
+        <span className="text-center font-extrabold md:text-5xl mt-8 pb-6">Offizieller Nitehub-Blog</span>
+      </h1>
+      <p className="text-center text-gray-500 dark:text-gray-400">
+        Die neusten Updates und Veröffentlichungen vom Nitehub Team.
+      </p>
+    </div>
+  );
+}
 
 import BlogIndex from '../components/blog-index'
 
+<BlogHeader/>
 <BlogIndex/>
