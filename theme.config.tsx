@@ -162,7 +162,7 @@ const config: DocsThemeConfig = {
   toc: {
     title: () => {
       const { locale } = useRouter();
-      return TABLE_OF_CONTENTS_TITLE[locale] || TABLE_OF_CONTENTS_TITLE["en-US"];
+      return TOC_TITLE_WITH_TRANSLATIONS[locale] || TOC_TITLE_WITH_TRANSLATIONS["en-US"];
     },
   },
   sidebar: {
