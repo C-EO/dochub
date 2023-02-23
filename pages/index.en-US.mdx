@@ -1,3 +1,5 @@
+import { Card, Cards } from 'nextra-theme-docs'
+
 # Nitehub Documentation
 
 **Help for wherever you are on your Nitehub journey.**
@@ -6,9 +8,18 @@
 
 If you're new to Nitehub, consider reading the recommendations below.
 
-[Getting Started](/getting-started)
-
-[Create an account](/account-create)
+<Cards>
+  <Card icon={<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width={2} stroke-linecap="round" stroke-linejoin="round">
+    <path d="M18.36 6.64a9 9 0 1 1-12.73 0" />
+    <line x1="12" y1="2" x2="12" y2="12" />
+  </svg>} title="Getting Started" href="/getting-started"/>
+  <Card icon={<svg
+  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width={2} stroke-linecap="round" stroke-linejoin="round">
+  <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
+  <circle cx="12" cy="7" r="4" />
+</svg>
+} title="Create an Account" href="/account/create"/>
+<Cards />
 
 ## More help
 
