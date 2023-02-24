@@ -32,7 +32,7 @@
     "theme": {
       "sidebar": false,
       "pagination": false,
-      "typesetting": "article"
+      "toc": false
     }
   },
   "500": {
@@ -40,7 +40,7 @@
     "theme": {
       "sidebar": false,
       "pagination": false,
-      "typesetting": "article"
+      "toc": false
     }
   },
   "contact": {
