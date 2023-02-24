@@ -105,39 +105,57 @@ const config: DocsThemeConfig = {
       </span>
     ),
   },
+  // head: () => {
+  //   const { asPath } = useRouter();
+  //   const { frontMatter } = useConfig();
+  //   return (
+  //     <>
+  //       <meta
+  //         property="og:url"
+  //         content={ `https://dochub.vercel.app${asPath}` }
+  //       />
+  //       <meta
+  //         property="og:title"
+  //         content={ frontMatter.title || "Nitehub Documentation" }
+  //       />
+  //       <meta
+  //         property="og:description"
+  //         content={
+  //           frontMatter.description || "The Official Nitehub Documentation."
+  //         }
+  //       />
+  //       <meta name="msapplication-TileColor" content="#000000" />
+  //       <meta name="theme-color" content="#000" />
+  //       <meta name="twitter:card" content="summary_large_image" />
+  //       <meta name="twitter:site" content="@nitehub_org" />
+  //       <meta name="twitter:creator" content="@nitehub_org" />
+  //     </>
+  //   );
+  // },
   head: () => {
-    const { asPath } = useRouter();
-    const { frontMatter } = useConfig();
-    return (
-      <>
-        <meta
-          property="og:url"
-          content={ `https://dochub.vercel.app${asPath}` }
-        />
-        <meta
-          property="og:title"
-          content={ frontMatter.title || "Nitehub Documentation" }
-        />
-        <meta
-          property="og:description"
-          content={
-            frontMatter.description || "The Official Nitehub Documentation."
-          }
-        />
-        <meta name="msapplication-TileColor" content="#000000" />
-        <meta name="theme-color" content="#000" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@nitehub_org" />
-        <meta name="twitter:creator" content="@nitehub_org" />
-      </>
-    );
+    const { asPath, defaultLocale, locale } = useRouter()
+    const { frontMatter } = useConfig()
+    const url =
+      'https://dochub.vercel.app' +
+      (defaultLocale === locale ? asPath : `/${locale}${asPath}`)
+      
+    return <>
+      <meta property="og:url" content={url} />
+      <meta property="og:title" content={frontMatter.title || 'Nitehub Documentation'} />
+      <meta property="og:description" content={frontMatter.description || 'The Official Nitehub Documentation.'} />
+      <meta name="msapplication-TileColor" content="#000000" />
+      <meta name="theme-color" content="#000" />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:site" content="@nitehub_org" />
+      <meta name="twitter:creator" content="@nitehub_org" />
+    </>
   },
   useNextSeoProps() {
-    const { route } = useRouter();
-    if (route !== "/") {
+    const { asPath } = useRouter()
+    if (asPath !== '/') {
       return {
-        titleTemplate: "%s – Nitehub Documentation",
-      };
+        titleTemplate: '%s – Nitehub Documentation'
+      }
     }
   },
   darkMode: true,
