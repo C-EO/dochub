@@ -4,7 +4,7 @@
     "title": "Introduction"
   },
   "index": "Introduction",
-  "-- User Accounts --": {
+  "-- Accounts --": {
     "type": "separator",
     "title": "User Accounts"
   },
@@ -31,14 +31,16 @@
     "title": "404 - This page could not be found",
     "theme": {
       "sidebar": false,
-      "pagination": false
+      "pagination": false,
+      "toc": false
     }
   },
   "500": {
     "title": "500 - Internal Server Error",
     "theme": {
       "sidebar": false,
-      "pagination": false
+      "pagination": false,
+      "toc": false
     }
   },
   "contact": {
