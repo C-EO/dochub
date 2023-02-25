@@ -1,4 +1,6 @@
-# Nextra Docs Template 
+# Nitehub Documentation
+
+![](https://api.checklyhq.com/v1/badges/checks/44e6c977-6f74-4b6f-a108-2e32ba0d1d88?style=for-the-badge&theme=dark)
 
 This is a template for creating documentation with [Nextra](https://nextra.site).
 
