@@ -29,7 +29,13 @@
   },
   "showcase": {
     "title": "Showcase",
-    "type": "page"
+    "type": "page",
+    "theme": {
+      "sidebar": false,
+      "pagination": false,
+      "toc": false,
+      "breadcrumb": false
+    }
   },
   "404": {
     "title": "404 - This page could not be found",
