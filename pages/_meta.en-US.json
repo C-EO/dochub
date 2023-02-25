@@ -27,6 +27,15 @@
       "typesetting": "article" 
     }
   },
+  "showcase": {
+    "title": "Showcase",
+    "type": "page",
+    "theme": {
+      "sidebar": false,
+      "pagination": false,
+      "toc": false
+    }
+  },
   "404": {
     "title": "404 - This page could not be found",
     "theme": {
