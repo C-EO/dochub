@@ -30,6 +30,7 @@
     "intersection-observer": "^0.10.0",
     "remark-mdx-disable-explicit-jsx": "0.1.0",
     "@vercel/analytics": "latest",
+    "@react-aria/ssr": "3.3.0",
     "focus-visible": "^5.2.0"
   },
   "devDependencies": {
