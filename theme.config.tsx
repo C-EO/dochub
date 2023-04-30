@@ -1,6 +1,7 @@
 import React from "react";
 import { DocsThemeConfig, useConfig } from "nextra-theme-docs";
 import { useRouter } from "next/router";
+import BackToTop from "./components/BackToTop";
 
 const NITEHUB_URL = "https://git.c-eo.repl.co";
 
@@ -182,6 +183,7 @@ const config: DocsThemeConfig = {
       const { locale } = useRouter();
       return TOC_TITLE_WITH_TRANSLATIONS[locale] || TOC_TITLE_WITH_TRANSLATIONS["en-US"];
     },
+    extraContent: BackToTop,
   },
   sidebar: {
     defaultMenuCollapseLevel: 0,
