@@ -18,6 +18,7 @@
   },
   "homepage": "https://dochub.vercel.app",
   "dependencies": {
+    "@geist-ui/icons": "latest",
     "clsx": "^1.2.1",
     "classnames": "2.3.2",
     "next": "^13.2.0",
