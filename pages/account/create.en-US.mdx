@@ -1,5 +1,9 @@
 import { Callout, Steps } from 'nextra-theme-docs'
 import { Screenshot } from 'components/screenshot'
+import nitehubImg from '../../assets/nitehub.jpeg'
+import registerAccountImg from '../../assets/register.jpeg'
+import registerImg from '../../assets/activation-one.jpeg'
+import registerImg from '../../assets/activation-two.jpeg'
 
 # Creating an Account on Nitehub
 
@@ -8,21 +12,25 @@ The first step in your Nitehub journey is creating an account. Please follow the
 <Steps>
 ### Navigate to Nitehub.
   
-Visit [Nitehub](https://git.c-eo.repl.co) and click on the "Register" link in the top-right corner of your screen.
- 
-import registerAccountImg from '../../.github/screenshot.png' 
+Visit [Nitehub](https://git.c-eo.repl.co) and click on the "Register" link in the top-right corner of your screen. 
 
-<Screenshot src={registerAccountImg} alt="Register Link" />
+<Screenshot src={nitehubImg} alt="Nitehub" />
   
 ### Register yourself.
   
-Once on the "Register" page, you will see a form in which you must fill your name, email address, and a strong password. (You'll also have to complete the `reCAPTCHA` challenge provided by 'hCaptcha'.)
+Once on the "Register" page, you will see a form in which you must fill your username, email address, and a strong password. (You'll also have to complete the `CAPTCHA` challenge provided by 'hCaptcha'.)
 
-<Screenshot src={registerAccountImg} alt="Register Link" />
-  
+<Screenshot src={registerAccountImg} alt="Register Page" />
+
 ### Confirm your identity.
 
 On clicking the "Register Account" button, you'll be emailed a link with which to activate the account. (Please not that the link is valid for **'3 hours'**)
 
+<Screenshot src={registerImg} alt="Registration" />
+
+<Screenshot src={activateImg} alt="Activation" />
+
 After activating your account, you are done, and we're good to go.
 </Steps>
+
+**NB:** Please note that you can also use an OAuth2 provider to register for Nitehub.
